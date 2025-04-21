@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ConsoleCaptureService {
+export class AngularConsoleCaptureService {
 
   private logs: any[] = [];
   private isCapturing = true;

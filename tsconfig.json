@@ -4,6 +4,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "angular-console-capture": [
+        "dist/angular-console-capture"
+      ],
       "console-capture": [
         "dist/console-capture"
       ]

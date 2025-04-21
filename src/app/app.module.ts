@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { ConsoleCaptureModule } from 'console-capture';
+import { AppComponent } from './app.component'
+import { AngularConsoleCaptureModule } from 'angular-console-capture'
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { ConsoleCaptureModule } from 'console-capture';
   ],
   imports: [
     BrowserModule,
-    ConsoleCaptureModule
+    AngularConsoleCaptureModule
   ],
   providers: [],
   bootstrap: [AppComponent]

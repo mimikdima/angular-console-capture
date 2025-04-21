@@ -97,23 +97,23 @@
         }
       }
     },
-    "console-capture": {
+    "angular-console-capture": {
       "projectType": "library",
-      "root": "projects/console-capture",
-      "sourceRoot": "projects/console-capture/src",
+      "root": "projects/angular-console-capture",
+      "sourceRoot": "projects/angular-console-capture/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/console-capture/ng-package.json"
+            "project": "projects/angular-console-capture/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/console-capture/tsconfig.lib.prod.json"
+              "tsConfig": "projects/angular-console-capture/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/console-capture/tsconfig.lib.json"
+              "tsConfig": "projects/angular-console-capture/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -121,9 +121,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/console-capture/src/test.ts",
-            "tsConfig": "projects/console-capture/tsconfig.spec.json",
-            "karmaConfig": "projects/console-capture/karma.conf.js"
+            "main": "projects/angular-console-capture/src/test.ts",
+            "tsConfig": "projects/angular-console-capture/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-console-capture/karma.conf.js"
           }
         }
       }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConsoleCaptureService } from 'console-capture';
+import { AngularConsoleCaptureService } from 'angular-console-capture';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +9,17 @@ import { ConsoleCaptureService } from 'console-capture';
 export class AppComponent implements OnInit {
   title = 'console';
 
-  constructor(private consoleCaptureService: ConsoleCaptureService){}
+  constructor(private angularConsoleCaptureService: AngularConsoleCaptureService){}
 
   ngOnInit() {
     document.addEventListener('keydown', (event) => {
        if (event.ctrlKey && event.key === 'b') {
-           this.consoleCaptureService.pauseCapturing();
+           this.angularConsoleCaptureService.pauseCapturing();
 
-           const capturedData = this.consoleCaptureService.getCapturedData();
+           const capturedData = this.angularConsoleCaptureService.getCapturedData();
 
            console.log(capturedData)
-           this.consoleCaptureService.unPauseCapturing();
+           this.angularConsoleCaptureService.unPauseCapturing();
        }
    });
   }
