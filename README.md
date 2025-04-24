@@ -44,29 +44,29 @@ Resumes console capturing after a manual stop.
 
 Add service to your project
 
-        import { ConsoleCaptureModule } from 'console-capture';
+        import { AngularConsoleCaptureModule } from 'angular-console-capture';
         
         @NgModule({
-          imports: [ConsoleCaptureModule]
+          imports: [AngularConsoleCaptureModule]
         })
         export class AppModule {}
 
 add activation
       
-        constructor(private consoleCaptureService: ConsoleCaptureService){}
+        constructor(private angularConsoleCaptureSrv: AngularConsoleCaptureModule){}
       
         ngOnInit() {
          // -> here you can set the exact method you will use to call data from the console
           document.addEventListener('keydown', (event) => {
              if (event.ctrlKey && event.key === 'b') { 
-                 this.consoleCaptureService.pauseCapturing();
+                 this.angularConsoleCaptureSrv.pauseCapturing();
       
-                 const capturedData = this.consoleCaptureService.getCapturedData();
+                 const capturedData = this.angularConsoleCaptureSrv.getCapturedData();
                  
                  // call API to save in server if you need
                  
                  console.log(capturedData)
-                 this.consoleCaptureService.unPauseCapturing();
+                 this.angularConsoleCaptureSrv.unPauseCapturing();
              }
          });
         }
