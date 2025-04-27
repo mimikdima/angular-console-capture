@@ -37,7 +37,7 @@ Resumes console capturing after a manual stop.
 
 ## 📦 Installation
 
-      npm install console-capture
+      npm install angular-console-capture
 
 
 ## example
