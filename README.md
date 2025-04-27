@@ -53,7 +53,7 @@ Add service to your project
 
 add activation
       
-        constructor(private angularConsoleCaptureSrv: AngularConsoleCaptureModule){}
+        constructor(private angularConsoleCaptureSrv: AngularConsoleCaptureService){}
       
         ngOnInit() {
          // -> here you can set the exact method you will use to call data from the console
